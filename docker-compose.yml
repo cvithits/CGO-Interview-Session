@@ -9,7 +9,7 @@
         - POSTGRES_PASSWORD=postgres
     web:
       build: .      
-      command: python CGO_Interview_Session/manage.py runserver 0.0.0.0:9999
+      command: python cgo_interview_session/manage.py runserver 0.0.0.0:9999
       volumes:
         - .:/code
       ports:
