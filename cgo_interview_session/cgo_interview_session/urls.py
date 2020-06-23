@@ -20,5 +20,5 @@ from . import views
 urlpatterns = [
     path('', views.homeReq),
     path('admin/', admin.site.urls),
-    path('get_earliest_reach_time/<int:position>/<slug:leavesfalltime>/', views.solutionReq),
+    path('get_earliest_reach_time/', views.solutionReq, name='solutionReq')
 ]
